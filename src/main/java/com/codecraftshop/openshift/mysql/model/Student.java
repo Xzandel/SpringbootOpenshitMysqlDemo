@@ -7,15 +7,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="student")
+@Table(name = "student")
 public class Student {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	private String name;
-	
+
 	private String address;
 
 	public Long getId() {
@@ -44,7 +44,6 @@ public class Student {
 
 	public Student() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Student(Long id, String name, String address) {
@@ -53,6 +52,5 @@ public class Student {
 		this.name = name;
 		this.address = address;
 	}
-	
-	
+
 }
