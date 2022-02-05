@@ -11,12 +11,12 @@ import com.codecraftshop.openshift.mysql.repository.StudentRepository;
 
 @RestController
 public class StudentController {
-	
+
 	@Autowired
 	private StudentRepository studentRepository;
-	
-	@RequestMapping(value="/students")
-	public List<Student> getStudents(){
+
+	@RequestMapping(value = "/students")
+	public List<Student> getStudents() {
 		return (List<Student>) studentRepository.findAll();
 	}
 }
